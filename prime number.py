@@ -11,3 +11,4 @@ for i in range(2,number):
         break
 else:
     print("Number is prime.")
+# end.
