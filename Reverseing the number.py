@@ -8,4 +8,15 @@ while num > 0:
     num = num // 10
 
 print(reverse)
+# using string slicing.
+num2=int(input("enter the string : "))
+print(str(num2)[::-1])
 
+# recursion method.
+# define recursum
+def recurcum(num3,reverse1):
+    if num3 >0:
+        reminder1 = num3 % 10
+        reverse1 = (reverse1*10)+reminder1
+        num3 = num3//2
+        return recurcum()
