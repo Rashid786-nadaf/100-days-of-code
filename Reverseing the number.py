@@ -19,4 +19,8 @@ def recurcum(num3,reverse1):
         reminder1 = num3 % 10
         reverse1 = (reverse1*10)+reminder1
         num3 = num3//2
-        return recurcum()
+        return recurcum(int(num3/10),reverse)
+
+num3 = int(input("Enter the number: "))
+reverse1 = 0
+print(recurcum(num3,reverse1))
